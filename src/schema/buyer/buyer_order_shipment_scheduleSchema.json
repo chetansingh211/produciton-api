@@ -1,0 +1,64 @@
+{
+    "title" : "BuyerOrderShipmentSchedule" , 
+    "description" : " Buyer Order Shipment Schedule" ,
+    "type" : "object",
+    "properties"  : {
+        "buyer_order_id" : {
+            "type" : "number"
+        },
+        "style_id" : {
+            "type" : "number"
+        },
+        "size_id" : {
+            "type" : "number"
+        },
+        "color_id" : {
+            "type" : "number"
+        },
+        "quantity" : {
+            "type" : "decimal"
+        },
+        "scheduled_dt" :{
+            "type" :"string",
+            "format" : "date-time"
+        },
+        "address1" : {
+            "type" : "string",
+            "maxLength" : 255
+        },
+        "city" : {
+            "type" : "string",
+            "maxLenght" : 20
+        },
+        "state" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "pincode" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "country" : {
+            "type" : "string",
+            "maxLength" : 3
+        },
+        "mode_of_shipment" : {
+            "type" : "string",
+            "maxLength" : 2
+        },
+        "preferred_courier" : {
+            "type": "string",
+            "maxLength" :25
+        },
+        "shipped_quantity" : {
+            "type":"decimal"
+        },
+        "shipment_value" : {
+            "type" : "decimal"
+        },
+        "shipment_weight" : {
+            "type" : "decimal"
+    }
+},
+"required" : ["buyer_order_id", "size_id","style_id","color_id","scheduled_dt","city", "state"]
+}

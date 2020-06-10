@@ -1,0 +1,51 @@
+{
+    "title" : "BuyerOrderStyle",
+    "description" : "Buyer Order Style",
+    "type" : "object",
+    "properties" : {
+        "buyer_order_id" : {
+            "type" : "number"
+        },
+        "costing_id" : {
+            "type" :"number"
+        },
+        "total_quantity" : {
+            "type" : "decimal"
+        },
+        "unit_ quantity" : {
+            "type" : " string",
+            "maxLength" : 10
+        },
+        "rate" : {
+         "type" : "decimal"
+        },
+        "invoiced_quantity" : {
+            "type" : "decimal"
+        },
+        "packed_quantity" : {
+            "type": " decimal" 
+        },
+        "shipped_quantity" : {
+            "type" : "decimal"
+        },
+        "segment" : {
+            "type" : " string",
+            "maxLength" : 15
+        },
+        "category" : {
+            "type" : " string",
+            "maxLength" : 15
+        },
+        "quota_system" : {
+            "type" :" string",
+            "maxLength" : 15
+        },
+        "garment_id" : {
+            "type" : "number"
+        },
+        "qty_in_perc" : {
+            "type" :" decimal"
+        }
+    },
+"required" : [ "buyer_order_id" , "costing_id" , "rate" , "garment_id"]
+}

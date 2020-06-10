@@ -1,0 +1,54 @@
+{
+    "title": "VendorJobWorks",
+    "description": "Vendor Job Works",
+    "type": "object",
+    "properties": {
+        "process_id": {
+            "type": "number"
+        },
+        "vendor_id": {
+            "type": "number"
+        },
+        "capacity": {
+            "type": "number",
+            "multipleOf": 0.01
+        },
+        "unit_capacity": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "lead_time": {
+            "type": "number",
+            "multipleOf": 0.1
+        },
+        "lead_time_unit": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "rate": {
+            "type": "number",
+            "multipleOf": 0.1
+        },
+        "unit_rate": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "last_updated": {
+            "type": "string",
+            "format": "date"
+        },
+        "last_updated_by": {
+            "type": "string",
+            "maxLength": 15
+        },
+        "last_supplied_rate": {
+            "type": "number",
+            "multipleOf": 0.1
+        },
+        "last_supplied_date": {
+            "type": "string",
+            "format": "date"
+        }
+    },
+    "required": ["process_id", "vendor_id", "last_updated", "last_updated_by", "last_supplied_date"]
+}

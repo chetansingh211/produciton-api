@@ -1,0 +1,21 @@
+{
+    "title"  : "BuyerPreferredVendors",
+    "description" : "Buyer Preferred Vendors",
+    "type" : "object",
+    "properties" : {
+        "buyer_id" : {
+            "type" : " number"
+        },
+        "vendor_id" : {
+            "type" :" number"
+        },
+        "process_id" : {
+            "type" :" number"
+        },
+        "comments" : {
+            "type" : "string",
+            "maxLength" : 150
+        }
+    },
+    "required" : ["buyer_id" , "vendor_id", "process_id"]
+}

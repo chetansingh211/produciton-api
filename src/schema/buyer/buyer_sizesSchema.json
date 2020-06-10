@@ -1,0 +1,18 @@
+{
+    "title" : "BuyerSizes",
+    "description" : "Buyer Sizes",
+    "type" : "object" ,
+    "properties" : {
+        "buyer_id" : {
+            "type" : "number"
+        },
+        "garment_id" : {
+            "type" : "number"
+        },
+        "size_description" : {
+            "type" : "string",
+            "maxLength" : 150
+        }
+    },
+    "required" : ["buyer_id" , "garment_id"]
+}

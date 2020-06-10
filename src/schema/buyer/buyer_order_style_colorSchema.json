@@ -1,0 +1,39 @@
+{
+    "title" : "BuyerOrderStyleColor" , 
+    "description" : "Buyer Order Style Color" ,
+    "type" : "object" , 
+    "properties"  : {
+        "style_id"  : {
+            "type" : "number"
+        },
+        "color_id" : {
+            "type" : "number"
+        },
+        "buyer_order_id" : {
+            "type" : "number"
+        },
+        "costing_id" : {
+            "type" : "number"
+        },
+        "quantity" : {
+            "type" : "decimal"
+        },
+        "unit_quantity" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "rate" : {
+            "type" : "decimal"
+        },
+        "invoiced_quantity" : {
+            "type" : "decimal"
+        },
+        "packed_quantity" : {
+            "type" : "decimal"
+        },
+        "shipped_quanity" : {
+            "type" : "decimal" 
+        }
+    }, 
+    "required" :[ "style_id" , "color_id" , "buyer_order_id","costing_id"]
+}

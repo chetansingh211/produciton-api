@@ -1,0 +1,15 @@
+{
+    "title" : "BuyerTerms",
+    "description" : "Buyer Terms" ,
+     "type" : "object" ,
+     "properties" : {
+         "buyer_id" : {
+             "type" : "number"
+         },
+         "term_desc" : {
+             "type" : "string",
+             "maxLength"  : 150
+         }
+      },
+      "required" : ["buyer_id"]
+}

@@ -1,0 +1,101 @@
+{
+    "title" : "Item",
+    "description" : "Item Master",
+    "type" : "object",
+    "properties" :{
+        "item_type_id" : {
+            "type" : "number"
+        },
+        "item_name" : {
+            "type" : "string",
+            "maxLength" : 100
+        },
+        "color_id" : {
+            "type" : "number"
+        },
+        "measurement_unit" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "average_rate" : {
+            "type": "decimal"
+        },
+        "unit_rate" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "last_purchase_rate": {
+            "type" : "decimal"
+        },
+        "last_purchase_date": {
+            "type" : "string",
+            "format" : "date"
+        },
+        "last_purchase_vendor_id" : {
+            "type" : "number"
+        },
+        "item_source" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "item_weight" :{
+            "type" : "decimal"
+        },
+        "item_width" :{
+            "type" : "decimal"
+        },
+        "opening_Stock" : {
+            "type" : "decimal"
+        },
+        "buyer_id" :{
+            "type" : "number"
+        },
+        "impoerted_or_indigenous" : {
+            "type" : "string",
+            "maxLength" : 1
+        },
+        "min_ord_quantity" : {
+            "type" : "decimal"
+        },
+        "max_ord_quantity" : {
+            "type" :"decimal"
+        },
+        "season" :{
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "material" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "appearance" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "width_uom" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "consumption" : {
+            "type" : "decimal"
+        },
+        "unit_quanity" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "wastage_factor" : {
+            "type" : "decimal"
+        },
+        "procuremet_rate" : {
+            "type" : "decimal"
+        },
+        "conversion_factor" : {
+            "type" : "decimal"
+        },
+        "conversion_type" : {
+            "type" : "string",
+            "maxLength" : 20
+        }
+    },
+    "required": ["item_type_id", "color_id", "buyer_id","last_purchase_vendor_id","item_name"]
+}

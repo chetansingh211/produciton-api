@@ -1,0 +1,46 @@
+{
+    "title" : "BuyerApprovals",
+    "description" : " Buyer Approvals",
+    "type" : " object",
+    "properties" : {
+        "buyer_id"  : {
+            "type" : "number"
+        },
+        "action_name"  : {
+            "type" : "string",
+            "maxLength"  : 50
+        },
+        "approval_type" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "description" : {
+            "type" : "string",
+            "maxLength" : 255
+        },
+        "quantity"  :{
+            "type" : "decimal"
+        },
+        "unit_of_qty" : {
+            "type"  : "string",
+            "maxLength" : 10
+        },
+        "shipment_mode" : {
+            "type" : "string",
+            "maxLength" : 25
+        },
+        "notify" : {
+            "type" : "string",
+            "maxLength" : 15
+        },
+        "chargeable" : {
+            "type" : "string",
+            "maxLength" : 1
+        },
+        "bill_to" : {
+            "type" : "string",
+            "maxLength" : 50
+        }
+    },
+    "required" : ["buyer_id", "action_name", "quantity"]
+} 

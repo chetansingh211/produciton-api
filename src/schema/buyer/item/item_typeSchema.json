@@ -1,0 +1,16 @@
+{
+    "title" : "Item",
+    "description" : "Item Type",
+    "type" : "object",
+    "properties" : {
+        "item_type_description" : {
+            "type" : "string",
+            "maxLength" : 50
+        },
+        "item_type_code" : {
+            "type" : "string",
+            "maxLength" : 10
+        }
+    },
+    "required": [ "item_type_code", "item_type_description"]
+}

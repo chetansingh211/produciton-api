@@ -1,0 +1,68 @@
+{
+    "title": "VendorBankers",
+    "description": " Vendor Bankers ",
+    "type": "object",
+    "properties": {
+        "vendor_id": {
+            "type": "number"
+        },
+        "vendor_account": {
+            "type": "string",
+            "maxLength": 40
+        },
+        "our_account": {
+            "type": "string",
+            "maxLength": 40
+        },
+        "mode_of_trnx": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "bank_name": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "contact_name": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "address": {
+            "type": "string",
+            "maxLength": 255
+        },
+        "city": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "state": {
+            "type": "string",
+            "maxLength": 2
+        },
+        "zip": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "country": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "phone": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "fax": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "e_mail": {
+            "type": "string",
+            "maxLength": 100,
+            "format": "email"
+        },
+        "swift_account": {
+            "type": "string",
+            "maxLength": 15
+        }
+    },
+    "required": ["vendor_id", "phone", "e_mail", "vendor_account", "bank_name"]
+}

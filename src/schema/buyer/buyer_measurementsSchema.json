@@ -1,0 +1,31 @@
+{
+    "title" : " BuyerMeasurements", 
+    "description" : "Buyer Measurements",
+    "type" : "object",
+    "properties" : {
+        "size_id" : {
+            "type" : "number"
+        },
+        "garment_id" : {
+            "type" : "number"
+        },
+        "buyer_id" :{
+            "type" : "number"
+    },
+    "sequence_id"  : {
+        "type" : "number"
+},
+"measurement" : {
+    "type" : "decimal"
+},
+"measurement_unit" : {
+    "type" : "string",
+    "maxLenght" : 10
+},
+"description " : {
+    "type" : "string",
+    "maxLength" : 30
+}
+    },
+"required": ["size_id", "garment_id", "buyer_id", "sequence_id"]
+}

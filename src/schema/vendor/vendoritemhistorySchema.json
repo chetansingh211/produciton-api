@@ -1,0 +1,50 @@
+{
+    "title": "VendorItemHistory",
+    "description": "Vendor Item History",
+    "type": "object",
+    "properties": {
+        "vendor_id": {
+            "type": "number"
+        },
+        "item_id": {
+            "type": "number"
+        },
+        "last_updated": {
+            "type": "string",
+            "format": "date"
+        },
+        "lead_updated": {
+            "type": "number",
+            "multipleOf": 0.1
+        },
+        "unit_time": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "capacity": {
+            "type": "number",
+            "multipleOf": 0.1
+        },
+        "unit_capacity": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "basic_rates": {
+            "type": "number",
+            "multipleOf": 0.1
+        },
+        "unit_rate": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "last_updated_by": {
+            "type": "string",
+            "maxLength": 15
+        },
+        "reasons": {
+            "type": "string",
+            "maxLength": 150
+        }
+    },
+    "required": ["vendor_id", "item_id", "last_updated", "capacity", "unit_capacity"]
+}

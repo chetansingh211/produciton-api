@@ -1,0 +1,48 @@
+{
+   "title": "Vendor",
+   "description": "Vendor Master",
+   "type": "object",
+   "properties": {
+     "vendor_name": {
+       "type": "string",
+       "maxLength": 100
+     },
+     "company_id": {
+       "type": "number"
+     },
+     "address": {
+       "type": "string",
+       "maxLength": 255
+     },
+     "city": {
+       "type": "string",
+       "maxLength": 20
+     },
+     "state": {
+       "type": "string",
+       "maxLength": 2
+     },
+     "zip": {
+       "type": "string",
+       "maxLength": 10
+     },
+     "country": {
+       "type": "string",
+       "maxLength": 2
+     },
+     "phone": {
+       "type": "string",
+       "maxLength": 20
+     },
+     "fax": {
+       "type": "string",
+       "maxLength": 20
+     },
+     "email": {
+       "type": "string",
+       "maxLength": 100,
+       "format": "email"
+     }
+   },
+   "required": ["vendor_name", "company_id", "phone", "email"]
+ }

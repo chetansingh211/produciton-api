@@ -1,0 +1,16 @@
+{
+    "title" : "Item",
+    "description" : "Work Process",
+    "type": "object",
+    "properties": {
+        "process_description": {
+            "type" : "string",
+            "maxLength" : 50
+        },
+        "process_code": {
+            "type" : "string",
+            "maxLength" : 10
+        }
+    },
+    "require": ["process_code","process_description"]
+}

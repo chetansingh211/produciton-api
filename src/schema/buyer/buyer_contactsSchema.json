@@ -1,0 +1,74 @@
+{
+    "title": " BuyerContacts",
+    "description"  : " Buyer Contacts",
+    "type" :  "object",
+    "properties" : {
+        "cshortname"  : {
+            "type"  : "string",
+            "maxLength" : 15
+        },
+        "department_id" : {
+            "type"  : "number"
+        },
+        "buyer_id" : {
+            "type" : "number"
+        },
+        "cfname " : {
+            "type" : "string",
+            "maxLength" : 25
+        },
+        "cmname" : {
+            "type" : "string",
+            "maxLength" : 25
+        },
+        "clname" : {
+            "type" : "string",
+            "maxLength" : 25
+        },
+        "designation" : {
+            "type"  :"string",
+            "maxLength" : 20
+        },
+        "address" : {
+            "type" : "string",
+            "maxLength" : 255
+        },
+        "city" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "state" : {
+            "type" : "string",
+            "maxLength" : 2
+        },
+        "country" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "zip" : {
+            "type"  : "string",
+            "maxLength" : 10        
+        },
+        "phone" : {
+            "type" : " string" , 
+            "maxLength" : 50
+        },
+        "fax" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "e_mail" : {
+            "type" :"string",
+            "maxLength" : 100
+        },
+        "beeper" : {
+            "type" :" string",
+            "maxLength" : 20
+        },
+        "principal_contact" : {
+            "type" : " string",
+            "maxLength" : 1
+        }
+    } ,
+    "required" : ["cshortname", "department_id" , "buyer_id" ,  "city", "e_mail", "phone"]
+}

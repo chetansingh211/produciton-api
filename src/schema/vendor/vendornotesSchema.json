@@ -1,0 +1,30 @@
+{
+    "title": "VendorNotes",
+    "description": "Vendor Notes",
+    "type": "object",
+    "properties": {
+        "vendor_id": {
+            "type": "number"
+        },
+        "note_id": {
+            "type": "number"
+        },
+        "note_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "note_by": {
+            "type": "string",
+            "maxLength": 25
+        },
+        "note": {
+            "type": "string",
+            "maxLength": 255
+        },
+        "topic": {
+            "type": "string",
+            "maxLength": 150
+        }
+    },
+    "require": ["vendor_id", "note_id", "note_date"]
+}

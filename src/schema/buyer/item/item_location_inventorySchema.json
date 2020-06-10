@@ -1,0 +1,96 @@
+{
+    "title" : "Item",
+    "description" : "Item Location Inventory",
+    "type" : "object",
+    "properties" : {
+        "location_id" : {
+            "type" : "number"
+        },
+        "company_id" : {
+            "type" : "number"
+        },
+        "item_id" : {
+            "type" : "number"
+        },
+        "procurement_rate" : {
+            "type" : "decimal"
+        },
+        "unit_rate" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "conversion_factor" : {
+            "type": "decimal"
+        },
+        "convertion_type" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "opening_stock" : {
+            "type" : "decimal"
+        },
+        "value_opening_stock" : {
+            "type" : "decimal"
+        } ,
+        "total_receipts" : {
+            "type" : "decimal"
+        },
+        "value_total_receipts" : {
+            "type" : "decimal"
+        },
+        "total_issued" : {
+           "type" : "decimal" 
+        },
+        "value_total_issued" : {
+            "type" : "decimal"
+        },
+        "stock_in_hand" : {
+            "type" : "decimal"
+        },
+        "value_of_stock" :{
+            "type" : "decimal"
+        },
+        "item_allocated" : {
+            "type" : "decimal"
+        },
+        "item_allocated_value" : {
+            "type" : "decimal"
+        },
+        "unit_stock" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "unit_stockvalue" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "inspected_quantity" : {
+            "type" : "decimal"
+        },
+        "ordered_quantity" : {
+            "type" : "decimal"
+        },
+        "unallocated_quantity" : {
+            "type" : "decimal"
+        },
+        "goods_at_premises" : {
+            "type" : "decimal"
+        },
+        "total_requested" : {
+            "type" : "decimal"
+        },
+        "total_rejection_qty" : {
+            "type" : "decimal"
+        },
+        "total_rejection_value" : {
+            "type" : "decimal"
+        },
+        "total_disputed_qty" : {
+            "type" :"decimal"
+        },
+        "total_reissue_qty" : {
+            "type" : "decimal"
+        }
+    },
+    "required": ["location_id", "company_id", "item_id"]
+}

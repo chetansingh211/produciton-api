@@ -1,0 +1,21 @@
+{
+    "title" : "BuyerProducts",
+    "description" : "Buyer Products",
+    "type" : "object",
+    "properties" : {
+        "product_id" : {
+            "type" : "number"
+        },
+        "buyer_id" : {
+            "type" : "number"
+        },
+        "company_id" : {
+            "type" : "number"
+        },
+        "remarks" : {
+            "type" : "string",
+            "maxLength" : 255
+        }
+    },
+    "required" : ["product_id", "buyer_id" , "company_id"]
+}

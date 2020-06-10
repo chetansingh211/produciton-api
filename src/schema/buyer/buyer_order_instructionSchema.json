@@ -1,0 +1,22 @@
+{
+    "title" : "BuyerOrderInstruction", 
+    "description" : "Buyer Order Instruction",
+    "type" : "object",
+    "properties" : {
+        "buyer_order_id" : {
+            "type" : "number"
+        },
+        "item_id" : {
+            "type" : "number"
+        },
+        "comments" : {
+            "type" : "string" , 
+            "maxLength" : 255
+        },
+        "approved" : {
+            "type" : "string",
+            "maxLength" : 1
+        }
+    },
+    "required": ["buyer_order_id" , "item_id"]
+}

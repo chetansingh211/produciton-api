@@ -1,0 +1,21 @@
+{
+    "title" : "BuyerOrderStylewiseLabel",
+    "description" : "Buyer Order Stylewise Label",
+    "type" : "object",
+    "properties" : {
+        "buyer_order_id" : {
+            "type" : "number"
+        },
+        "style_id" : {
+            "type" : "number"
+        },
+        "label_id" : {
+            "type" : "number"
+        } ,
+        "description" : {
+            "type" : "string",
+            "maxLength" : 255
+        }
+    },
+    "required" : ["buyer_order_id", "style_id", "label_id"]
+} 

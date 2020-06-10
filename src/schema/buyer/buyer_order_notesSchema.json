@@ -1,0 +1,29 @@
+{
+    "title" : "BuyerOrderNotes", 
+    "description" : "Buyer Order Notes" ,
+    "type" : "object",
+    "properties" : {
+        "order_id" : {
+            "type" : "number"
+        },
+        "buyer_id" : {
+            "type" : "number"
+        },
+        "note_date" : {
+            "type" : "string",
+            "format" : "date-time"
+        },
+        "note_by": {
+            "type" : "string",
+            "maxLength" : 25
+        },
+        "note" : {
+            "type" : "string"
+        },
+        "topic" : {
+            "type" : "string",
+            "maxLength" : 150
+        }
+    },
+    "required": ["order_id" , "buyer_id" , "note_date"]
+}

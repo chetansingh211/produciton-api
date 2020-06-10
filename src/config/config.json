@@ -1,0 +1,14 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "Interglobe12",
+    "database": "CREASYS_PROD",
+    "host": "garmex.cwduy9q4fnt5.ap-south-1.rds.amazonaws.com",
+    "port": 1433,
+    "dialect": "mssql",
+    "operatorsAliases": "false",
+    "dialectOptions": {
+        "encrypt": true
+    }
+  }
+}

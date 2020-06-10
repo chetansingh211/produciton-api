@@ -1,0 +1,72 @@
+{
+    "title" : "Item" , 
+    "description" : "Item Sizewise Inventory",
+    "type" : "object",
+    "properties"  : {
+        "item_id" : {
+            "type": "number"
+        },
+        "location_id" : {
+            "type" : "number"
+        },
+        "size_id" : {
+            "type" : "number"
+        },
+        "company_id": {
+            "type" : "number"
+        },
+        "procurement_rate" :  {
+            "type" : "decimal"
+        },
+        "unit_rate"  :{ 
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "conversion_factor" : {
+            "type" : "decimal"
+        },
+        "conversion_type" : {
+            "type" : "string",
+            "maxLength"  : 20
+        },
+        "opening_stock" : {
+            "type" : "decimal"
+        },
+        "opening_stock_value" : {
+            "type" : "decimal"
+        },
+        "total_rcpts" : {
+            "type" : "decimal"
+        },
+        "total_rcpts_value" : {
+            "type" : "decimal"
+        },
+        "total_issued" : {
+            "type" : "decimal"
+        },
+        "total_issued_value" : {
+            "type" : "decimal"
+        },
+        "total_inhand" : {
+            "type" : "decimal"
+        },
+        "total_inhand_value" : {
+            "type" : "decimal"
+        },
+        "item_allocated"  : {
+            "type" : "decimal"
+        },
+        "item_allocated_value" : {
+            "type" : "decimal"
+        },
+        "unit_stock" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "unit_stockvalue" : {
+            "type" : "string",
+            "maxLength" :10
+        }
+    },
+    "required": ["item_id", "location_id", "company_id","size_id"]
+} 

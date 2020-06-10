@@ -1,0 +1,158 @@
+{
+    "title" : "BuyerOrder",
+    "description" : "Buyer Order",
+    "type" : "object",
+    "properties" : {
+        "order_number" : {
+            "type" : "string",
+            "maxLength" : 15
+        },
+        "company_id" : {
+            "type": "number"
+        },
+        "location_id" : {
+            "type" : "number"
+        },
+        "buyer_id" : {
+            "type" : "number"
+        },
+        "agent_id" : {
+            "type" : "number"
+        },
+        "order_type" : {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "order_date" : {
+            "type" : " string",
+            "format" : "date-time"
+        },
+        "payment_mode" : {
+            "type" : " string",
+            "maxLength" : 20
+        },
+        "order_rspt_mode" : {
+            "type" : " string",
+            "maxLength" : 20
+        },
+        "status" : {
+            "type" : " string",
+            "maxLength" : 1
+        },
+        "status_changed_dt" : {
+            "type" : "string" ,
+            "format" : "date-time"
+        },
+        "status_reference_dt" : {
+            "type" : "string" ,
+            "format" :"date-time"
+        },
+        "modified_by" : {
+            "type" : " string",
+            "maxLength" : 15
+        },
+        "comments" : {
+            "type" : " string",
+            "maxLength" : 255
+        },
+        "agent_commission" : {
+            "type " : "number"
+        },
+        "partial_payment" : {
+            "type" :" string",
+            "maxLength" : 1
+        },
+        "authorised_flag" : {
+            "type" : " string",
+            "maxLength" : 1
+        },
+        "authorised_date" : {
+            "type" : "string" ,
+            "format" :"date-time"
+        },
+        "authorised_by" : {
+            "type" :" string",
+            "maxLength" : 25
+        },
+        "authorised_comments" : {
+            "type" :" string",
+            "maxLength" : 150
+        },
+        "currency" : {
+            "type" :" string",
+            "maxLength" : 3
+        },
+        "destination_country" : {
+            "type" : " string",
+            "maxLength" : 20
+        },
+        "port_discharge_sea" : {
+            "type" : " string",
+            "maxLength" : 30
+        },
+        "port_discharge_air" : {
+            "type" : " string",
+            "maxLength" : 30
+        },
+        "final_destiation" : {
+            "type" : " string",
+            "maxLength" : 100
+        },
+        "delivery_terms" : {
+            "type" :" string",
+            "maxLength" : 255
+        },
+        "payment_terms" : {
+            "type" : " string",
+            "maxLength" : 255
+        },
+        "order_expiry_date" : {
+            "type" : "string" ,
+            "format" :"date-time"
+        },
+        "shipment_address1" : {
+            "type" :" string",
+            "maxLength" : 100
+        },
+        "shipment_address2" : {
+            "type" : " string",
+            "maxLength" : 100
+        },
+        "shipment_city" : {
+            "type" :" string",
+            "maxLength" : 20
+        },
+        "shipment_state" : {
+            "type" :" string",
+            "maxLength" : 2
+        },
+        "shipment_country" : {
+            "type" : " string",
+            "maxLength" : 20
+        },
+        "shipment_pin_code" : {
+            "type" :" string",
+            "maxLength" : 15
+        },
+        "shipment_fax1" : {
+            "type" :" string",
+            "maxLength" : 20
+        }, 
+        "shipment_fax2" : {
+            "type" :" string",
+            "maxLength" : 20
+        },
+        "shipment_phone1" : {
+            "type" :" string",
+            "maxLength" : 20
+        },
+        "shipment_phone2" : {
+            "type" :" string",
+            "maxLength": 20
+        },
+        "buyer_order_value" : {
+            "type" : "decimal"
+        }
+    },
+    "requirede" : ["order_number", "company_id", "location_id" , "buyer_id" ,"agent_id" , "status", "currency"]
+}

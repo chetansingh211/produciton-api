@@ -1,0 +1,19 @@
+{
+    "title" : "BuyerInstructions",
+    "description" : "Buyer Instructions",
+    "type" : "object",
+    "properties" : {
+        "instruction_type" : {
+            "type" : "string",
+            "maxLength": 20
+        },
+        "buyer_id"  : {
+            "type" : "number"
+        },
+        "description" : {
+            "type" : "string",
+            "maxLength" : 255
+        }
+    },
+    "required": ["instruction_type" , "buyer_id"]
+}

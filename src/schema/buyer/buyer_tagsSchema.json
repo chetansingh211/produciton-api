@@ -1,0 +1,21 @@
+{
+    "title" : "BuyerTags" , 
+    "description" : "Buyer Tags" , 
+    "type" : "object" , 
+    "properties" : {
+        "department_id" : {
+            "type" : "number"
+        },
+        "buyer_id" : {
+            "type" : "number"
+        },
+        "tag_id" : {
+            "type" : "number"
+        },
+        "tag_desc" : {
+            "type" : "string",
+            "maxLength" : 150
+        }
+    },
+    "required" : ["department_id" , "buyer_id", "tag_desc"]
+}

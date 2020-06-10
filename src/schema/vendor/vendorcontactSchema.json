@@ -1,0 +1,56 @@
+{
+    "title": "VendorContact",
+    "description": "Vendor Contact",
+    "type": "object",
+    "properties": {
+        "vendor_id": {
+            "type": "number"
+        },
+        "contact_name": {
+            "type": "string",
+            "maxLength": 25
+        },
+        "address": {
+            "type": "string",
+            "maxLength": 255
+        },
+        "city": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "state": {
+            "type": "string",
+            "maxLength": 2
+        },
+        "zip": {
+            "type": "string",
+            "maxLength": 10
+        },
+        "country": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "phone": {
+            "type": "string",
+            "maxLength": 50
+        },
+        "fax": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "e_mail": {
+            "type": "string",
+            "maxLength": 100,
+            "format": "email"
+        },
+        "department": {
+            "type": "string",
+            "maxLength": 20
+        },
+        "designation": {
+            "type": "string",
+            "maxLength": 20
+        }
+    },
+    "required": ["vendor_id", "contact_name", "phone", "e_mail"]
+}

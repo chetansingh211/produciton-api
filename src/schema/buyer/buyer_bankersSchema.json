@@ -1,0 +1,83 @@
+{
+    "title" : "BuyerBakers" , 
+    "description" : "Buyer Bankers", 
+    "type" : "object",
+    "properties" : {
+        "buyer_id" : {
+            "type" : "number"
+        },
+        "buyer_account" : {
+            "type" : "string",
+            "maxLength" : 40
+        },
+        "our_account" : {
+            "type" : "string",
+            "maxLength" : 40
+        },
+        "modetxn" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "bank_name"  :{
+            "type" : "string",
+            "maxLength" : 200
+        },
+        "cfname" : {
+            "type" :"string",
+            "maxLength": 25
+        },
+        "pmname" : {
+            "type" : "string",
+            "maxLength" : 5
+        },
+        "plname" : {
+            "type" : "string",
+            "maxLength" : 25
+        },
+        "address" : {
+            "type" : "string",
+            "maxLength" : 255
+        },
+        "city": {
+            "type" : "string",
+            "maxLength" : 20
+        },
+        "state" : {
+            "type" : "string",
+            "maxLength" : 2
+        },
+        "country" : {
+            "type"  : "string",
+            "maxLength" : 20
+        },
+        "zip" : {
+            "type" : "string",
+            "maxLength" : 10
+        },
+        "phone" : {
+            "type" : "string",
+            "maxLength" : 50
+        },
+        "fax" : {
+            "type" : "string",
+            "maxlength" : 20
+        },
+        "e_mail" : {
+            "type" : "string",
+            "maxLength" : 100
+        },
+        "swift_accoungt_id" : {
+            "type" : "string",
+            "maxLength" : 15
+        },
+        "telex" : {
+            "type" :"string",
+            "maxLength" : 100
+        },
+        "agent_id" : {
+            "type" : "string",
+            "maxLength" : 15
+        }
+     },
+     "required": ["buyer_id", "buyer_account", "bank_name", "phone" , "e_mail", "agent_id"]
+}
